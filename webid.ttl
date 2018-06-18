@@ -9,6 +9,7 @@
 
 <#this> a foaf:Person ;
    foaf:name "Sebastian Nuck";
+   foaf:img "https://nucknorris.github.io/me.jpg";
    cert:key [ 
        a cert:RSAPublicKey;
        rdfs:label "LSWT2018";
