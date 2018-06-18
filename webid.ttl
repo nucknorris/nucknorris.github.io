@@ -1,0 +1,17 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cert: <http://www.w3.org/ns/auth/cert#> .
+@prefix rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<> a foaf:PersonalProfileDocument ;
+   foaf:maker <#this> ;
+   foaf:primaryTopic <#this> .
+
+<#this> a foaf:Person ;
+   foaf:name "Sebastian Nuck";
+   cert:key [ 
+       a cert:RSAPublicKey;
+       rdfs:label "LSWT2018";
+       cert:modulus "e2c81a6dd2c6caf064cd70660e05ba1f9ea3d73c06e315175dc7c740b6f4a20191553c504eaa1659d32910260fdf5301a8d4581e614f55ad466236f3f0db391dc73d54a6d72046da28f2c24c0ed0644c77948cf8284aae0e4e260e5fec7bf7d5dcba74109e9d52091c4422b643f886414d09a9a5c87f5aea80a0eda12b014bdd3256a64f4560a06c8ba4bbafa66598099a90c56f399584556d9d86058de3b57d062afe541c323ce9e6b58af8555003503f104d861b8c5744f05ab96f8d3139c93bcee63144d4b1a2151c96cf34911ba26025842ed264ffb51896c67904d4d1e51c0941b1ede059c53fc28294f20f0893d5868f5b1111d6efd825"^^xsd:hexBinary;
+       cert:exponent "65537"^^xsd:integer ;
+      ] . 
